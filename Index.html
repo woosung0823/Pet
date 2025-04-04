@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>애완동물 이름을 지어드립니다.</title>
+  <style>
+    body {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 20%;
+    }
+  </style>
+</head>
+  <body>
+    <p id="message">🔮 마법의 NFC가 말하길... 🔮</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+  
+    <script>
+      function showRandomMessage() {
+        const messages = [
+          "초코",
+          "딸기",
+          "우유",
+          "재현",
+        ];
+        document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+      }
+    </script>
+  </body>
+</html>
